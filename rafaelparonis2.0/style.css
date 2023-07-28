@@ -1,0 +1,368 @@
+
+
+body {
+    margin: 0;
+    background-color: #191d2e ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#link:hover{
+    cursor: pointer;
+    color: #558BC4;
+}
+#link:before {
+    content: "🔗"
+}
+#animationText{
+    animation-name: text;
+    animation-duration: 1s;
+    transition: 0s;
+    animation-iteration-count: infinite;
+}
+#invert {
+    filter: invert(100%);
+}
+@keyframes text {
+    from  {color: white;  transition: 0s;}
+    to   {color: transparent;  transition: 0s;}
+  }
+.alert{
+    display: none;
+    width: 400px;
+    height: auto;
+    padding-bottom: 20px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    color: white;
+    font-family: system-ui;
+    text-align: center;
+}
+.alert h1 {
+    color: #f12a23;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+.alert button {
+    border-radius: 5px;
+    padding: 15px;
+    margin-inline: 20px;
+    margin-top: 15px;
+}
+#confirm {
+    background-color: #00ff0d;
+}
+#no-confirm {
+    background-color: #f12a23;
+}
+.btnBack{
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: #558BC4;
+    color: white;
+    border-radius: 15px;
+    font-size: 30px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+.btnBack:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+.btnBack:focus {
+    transition: 0.5s;
+    opacity: 1;
+}
+/* -- NavBar --*/
+.NavBar{
+    background-color: #558BC4;
+    width: 100%;
+    height: 70px;
+    display: inline-flex;
+}
+.btnNavbar{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btnNavbar:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+
+/* -- Baner --*/
+.Baner{
+    margin-top: 5px;
+    width: 100%;
+    height: 90vh;
+}
+.imgBnaer{
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+    
+}
+.TextCenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border: 1px solid white;
+}
+
+
+/* -- Topic -- */
+.topic{
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+}
+.topicTitle{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.topicTitle span {
+    position: relative;
+    top: 25px;
+    font-size: 50px;
+    color: white;
+}
+/* -- Sobre --*/
+.sobre{
+    padding: 15px;
+    text-align: start;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.sobre img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+/* -- Projetos --*/
+
+.projetos {
+    margin-top: 20px;
+    display: flex;
+    height: auto;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pj {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    height: auto;
+    margin-inline: 7px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.pj:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.pjTop {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+}
+.pjTop img {
+    height: 100px;
+    margin: 5px;
+    filter: invert(100%);
+}
+.pjTop span {
+    color: white;
+    font-size: 20px;
+    margin-inline: 5px;
+    margin-top: 15px;
+}
+.pjContent {
+    height: auto;
+    padding: 5px ;
+}
+.pjContent span {
+    color: white;
+    font-family: system-ui;
+}
+
+.pjTags {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.pjTags button {
+    border: 1px solid white;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-inline: 5px;
+    cursor: pointer;
+}
+#html {
+    background-color: #F25320;
+}
+#css {
+    background-color: #006AB1;
+}
+#script {
+    background-color: #5E9F13;
+}
+#python {
+    background-color: #3174AB;
+}
+#php {
+    background-color: #697AB1;
+}
+#mysql {
+    background-color: #3174AB;
+}
+/* -- Redes Sociais --*/
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.redes button {
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-inline: 5px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    background-color: transparent;
+}
+.redes button:hover{
+    transition: 0.5s;
+    filter: invert(100%);
+}
+.redes img {
+    width: 50px;
+    height: 50px;
+}
+/* -- linguagens --*/
+.ling {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ling button {
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-inline: 5px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.ling button:hover img{
+    transition: 0.5s;
+    filter: invert(100%);
+}
+.ling img {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+/* -- Telas -- */
+@media screen and (min-width: 400px) and (max-width: 750px) { 
+    /* -- NavBar --*/
+    .NavBar{
+        display: none;
+    }
+    /* -- Baner --*/
+    .TextCenter{
+        width: 310px;
+    }
+    /* -- Sobre --*/
+    .sobre {
+        display:grid;
+        text-align: center;
+    }
+    .sobre img {
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-right: 0;
+    }
+    /* -- Projetos --*/
+    .pj{
+        margin-bottom: 20px;
+    }
+    .alert{
+        width: auto;
+        padding: 5px;
+    }
+ 
+}
+@media screen and (min-width: 100px) and (max-width: 410px) { 
+    #animationText {
+        display: none;
+    }
+    #TextDiretion{
+        display: none;
+    }
+    /* -- NavBar --*/
+    .NavBar{
+        display: none;
+    }
+    /* -- Baner --*/
+    .TextCenter{
+        width: auto;
+    }
+    /* -- Sobre --*/
+    .sobre {
+        display:grid;
+        text-align: center;
+    }
+    .sobre img {
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-right: 0;
+    }
+    /* -- Projetos --*/
+    .pj{
+        margin-bottom: 20px;
+    }
+    .alert{
+        width: auto;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href='../icons/favicon.ico'>
+    <title>Rafael Paroni</title>
+</head>
+<body>
+    <div class="Baner" id="inicio"> <!-- Banner / Inicio -->
+        <img  class="imgBnaer" src="../pexels.jpg">
+        <h1 class="TextCenter"> <a id="TextDiretion">></a> Termianl <a id="animationText">|</a> </h1> 
+    </div>
+    <div class="topic" id="sobre"> <!-- Sobre -->
+        <div class="topicTitle"><span><a id="TextDiretion">></a> Sobre<a id="animationText">_</a></span></div>
+        <div class="sobre">
+            <img src="../icons/terminal.ico" id="invert">
+            <span>
+                Um Site feito para se comunicar com o Banco de dados Mysql, Podendo Deletar, Criar, Editar e Buscar dados e sendo possivel fazer login com senha e email<a id="animationText">_</a>
+            </span></div>
+    </div>
+    <div class="topic" id="redes"> <!-- social -->
+        <div class="topicTitle"><span><a id="TextDiretion">></a> linguagens<a id="animationText">_</a></span></div>
+        <div class="ling">
+            <button onclick="red('python')"> <img src="../icons/html.ico"> Html</button>
+            <button onclick="red('python')"> <img src="../icons/css.ico"> Css</button>
+            <button onclick="red('python')"> <img src="../icons/js.ico"> javascript</button>
+            <button onclick="red('python')"> <img src="../icons/php.ico"> Php</button>
+            <button onclick="red('python')"> <img src="../icons/mySql.ico"> MySql</button>
+        </div>
+    </div>
+    <button class="btnBack" onclick="comeback()">Voltar</button>
+</body>
+<script>
+    function comeback(){
+        window.location = '../index.html'
+    }
+</script>
+</html>
