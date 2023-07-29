@@ -23,7 +23,7 @@
         <div class="sobre">
             <img src="./icons/favicon.ico">
             <span>
-            Meu nome é  <a id="link" onclick="red(insta)">Rafael Paroni</a>, sou um rapaz que estuda programação nas horas livres e pretende trabalhar nesta área, <br>
+            Meu nome é  <a id="link" onclick="red('instagram')">Rafael Paroni</a>, sou um rapaz que estuda programação nas horas livres e pretende trabalhar nesta área, <br>
             mas especificamente na área web, onde trabalho com sites e bancos de dados, <br>
             Atualmente tenho <a>17 anos</a>.<br>
             E este site foi feito por mim com a finalidade de agrupar meus projetos pessoais e minhas redes sociais,<br>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="pjContent">
                         <span> 
-                            Website feito com finalidade de agrupar os meus projetos, minhas redes sociais e com intuito de aprender mais sobre <a onclick="red(html)" id="link">Html</a>/<a onclick="red(css)" id="link">Css</a>/<a onclick="red(script)" id="link">Scrpit</a>
+                            Website feito com finalidade de agrupar os meus projetos, minhas redes sociais e com intuito de aprender mais sobre <a onclick="red('html')" id="link">Html</a>/<a onclick="red('css')" id="link">Css</a>/<a onclick="red('script')" id="link">Scrpit</a>
                         </span>
                     </div>
                     <div class="pjTags">
@@ -54,7 +54,7 @@
                     </div>
                     <div class="pjContent">
                         <span> 
-                            Jogo feito em Python com intuito de aprender um pouco <a id="link" onclick="red(python)">Python</a>
+                            Jogo feito em Python com intuito de aprender um pouco <a id="link" onclick="red('python')">Python</a>
                         </span>
                     </div>
                     <div class="pjTags">
@@ -84,6 +84,20 @@
                         <span> 
                             Meu antigo site com o mesmo intuito que este, porem menos atualizado e menos complexo
 
+                        </span>
+                    </div>
+                    <div class="pjTags">
+                        <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
+                    </div>
+                </div>
+                <div class="pj " onclick="projeto('alert.html')"> <!-- alert -->
+                    <div class="pjTop">
+                        <img src="./icons/code.ico">
+                        <span>Alert html </span>
+                    </div>
+                    <div class="pjContent">
+                        <span> 
+                           Codigo em html javascript e css para criar um alerta personalizado
                         </span>
                     </div>
                     <div class="pjTags">
@@ -164,6 +178,5 @@
     function projeto(value){
         window.location = "./projeto/" + value
     }
-
 </script>
 </html>

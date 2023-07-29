@@ -10,25 +10,25 @@
 <body>
     <div class="Baner" id="inicio"> <!-- Banner / Inicio -->
         <img  class="imgBnaer" src="../pexels.jpg">
-        <h1 class="TextCenter"> <a id="TextDiretion">></a> WebSite Pessoal<a id="animationText">|</a> </h1> 
+        <h1 class="TextCenter"> <a id="TextDiretion">></a> Alert code<a id="animationText">|</a> </h1> 
     </div>
     <div class="topic" id="sobre"> <!-- Sobre -->
         <div class="topicTitle"><span><a id="TextDiretion">></a> Sobre<a id="animationText">_</a></span></div>
         <div class="sobre">
-            <img src="../icons/website.ico" id="invert">
+            <img src="../icons/jogo.ico" id="invert">
             <span>
-                Website feito com finalidade de agrupar os meus projetos, minhas redes sociais e com intuito de aprender mais sobre <a onclick="red('html')" id="link">Html</a>/<a onclick="red('css')" id="link">Css</a>/<a onclick="red('script')" id="link">Scrpit</a><a id="animationText">_</a>
+                Codigo em <a id="link" onclick="red('html')">Html</a> <a id="link" onclick="red('script')">Javascript</a> e <a id="link" onclick="red('css')">Css</a> para criar um alerta personalizado <a id="animationText">_</a> <br>  <a id="link" onclick="red('alertcode')">codigo!</a>
             </span></div>
     </div>
     <div class="topic" id="redes"> <!-- social -->
         <div class="topicTitle"><span><a id="TextDiretion">></a> linguagens<a id="animationText">_</a></span></div>
         <div class="ling">
             <button onclick="red('html')"> <img src="../icons/html.ico"> Html</button>
-            <button onclick="red('css')"><img src="../icons/css.ico"> Css</button>
-            <button onclick="red('script')"><img src="../icons/js.ico"> Javascript</button>
+            <button onclick="red('css')"> <img src="../icons/css.ico"> Css</button>
+            <button onclick="red('script')"> <img src="../icons/js.ico"> Javascript</button>
         </div>
     </div>
-    <button class="btnBack"  onclick="comeback()">Voltar</button>
+    <button class="btnBack"  onclick="comeback()" >Voltar</button>
 
     <div class="alert" id="alert">
         <h1>atenção!</h1>
@@ -79,6 +79,10 @@
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://g.co/kgs/jf1Gnk")
+        }else if(value == 'alertcode'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://alertcode.glitch.me/")
         }
     }
 </script>
