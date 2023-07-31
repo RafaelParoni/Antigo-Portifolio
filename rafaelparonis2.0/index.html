@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href='./icons/favicon.ico'>
+    <script src="script.js"></script>
     <title>Rafael Paroni</title>
 </head>
 <body>
@@ -33,35 +34,35 @@
     <div class="topic" id="projetos"> <!-- Projetos -->
         <div class="topicTitle"><span><a id="TextDiretion">></a> Projetos<a id="animationText">_</a></span></div>
             <div class="projetos">
-                <div class="pj " onclick="projeto('website-pessoal.html')"> <!-- Website pessoal -->
+                <div class="pj " onclick="project('website-pessoal')"> <!-- Website pessoal -->
                     <div class="pjTop">
                         <img src="./icons/website.ico">
                         <span>Website pessoal</span>
                     </div>
                     <div class="pjContent">
                         <span> 
-                            Website feito com finalidade de agrupar os meus projetos, minhas redes sociais e com intuito de aprender mais sobre <a onclick="red('html')" id="link">Html</a>/<a onclick="red('css')" id="link">Css</a>/<a onclick="red('script')" id="link">Scrpit</a>
+                            Website feito com finalidade de agrupar os meus projetos, minhas redes sociais e com intuito de aprender mais sobre Html, Css e javascript
                         </span>
                     </div>
                     <div class="pjTags">
                         <button id="html">HTML</button><button id="css">CSS</button><button id="script">JAVASCRIPT</button>
                     </div>
                 </div>
-                <div class="pj " onclick="projeto('snake-game.html')"> <!-- Snake game -->
+                <div class="pj " onclick="project('snake-game')"> <!-- Snake game -->
                     <div class="pjTop">
                         <img src="./icons/jogo.ico">
                         <span>Snake game</span>
                     </div>
                     <div class="pjContent">
                         <span> 
-                            Jogo feito em Python com intuito de aprender um pouco <a id="link" onclick="red('python')">Python</a>
+                            Jogo feito em Python com intuito de aprender um pouco Python
                         </span>
                     </div>
                     <div class="pjTags">
                         <button id="python">Python</button>
                     </div>
                 </div>
-                <div class="pj " onclick="projeto('terminal.html')"> <!-- Terminal -->
+                <div class="pj " onclick="project('terminal')"> <!-- Terminal -->
                     <div class="pjTop">
                         <img src="./icons/terminal.ico">
                         <span>Terminal</span>
@@ -75,7 +76,7 @@
                         <button id="html">html</button><button id="css">css</button><button id="script">javascript</button><button id="mysql">MySql</button><button id="php">php</button>
                     </div>
                 </div>
-                <div class="pj " onclick="projeto('website-old.html')"> <!-- Website Old -->
+                <div class="pj " onclick="project('website-old')"> <!-- Website Old -->
                     <div class="pjTop">
                         <img src="./icons/website.ico">
                         <span>Antigo Website </span>
@@ -90,20 +91,35 @@
                         <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
                     </div>
                 </div>
-                <div class="pj " onclick="projeto('alert.html')"> <!-- alert -->
+                <div class="pj " onclick="project('alert-html')"> <!-- alert -->
                     <div class="pjTop">
                         <img src="./icons/code.ico">
                         <span>Alert html </span>
                     </div>
                     <div class="pjContent">
                         <span> 
-                           Codigo em html javascript e css para criar um alerta personalizado
+                           Codigo em html, javascript e css para criar um alerta personalizado
                         </span>
                     </div>
                     <div class="pjTags">
                         <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
                     </div>
                 </div>
+                <div class="pj " onclick="project('login-screen')"> <!-- Login screen -->
+                    <div class="pjTop">
+                        <img src="./icons/website.ico">
+                        <span>Tela de Login</span>
+                    </div>
+                    <div class="pjContent">
+                        <span> 
+                          Telas de login simples feito para aprimorar conhecimento de css html e javascript
+                        </span>
+                    </div>
+                    <div class="pjTags">
+                        <button id="html">html</button><button id="css">css</button>
+                    </div>
+                </div>
+
 
             </div>
     </div>
@@ -129,54 +145,5 @@
         <button id="no-confirm" onclick="noConfirm('discord')" >Voltar</button>
     </div>
 </body>
-<script>
-    function href(value){
-        const element = document.getElementById(value);
-        
-        element.scrollIntoView();
-    }
-    function alerta(value){
-        if(value == "discord"){
-            document.getElementById('alertdiscord').style.display = "block"
-        }else{
-            document.getElementById('alert').style.display = "block"
-        }
-    }
-    function noConfirm(value){
-        if(value == 'discord'){
-            document.getElementById('alertdiscord').style.display = "none"
-        }else{
-            document.getElementById('alert').style.display = "none"
-        }
-        
-    }
-    function confirm(value){
-        window.location = document.getElementById('confirm').getAttribute('value')
-        noConfirm()
-    }
-    function red(value){
-        if(value == 'instagram'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://www.instagram.com/rafaelparroni/")
-        }else if(value == 'github'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://github.com/RafaelParoni")
-        }else if(value == 'twitter'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://twitter.com/RafaelParoni")
-        }else if(value == 'youtube'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://www.youtube.com/channel/UCCjwv7_RJteoSRhbRqFqP-Q")
-        }else if(value == 'discord'){
-            alerta('discord')
-        }
-    }
-    function projeto(value){
-        window.location = "./projeto/" + value
-    }
-</script>
+
 </html>

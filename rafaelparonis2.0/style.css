@@ -1,16 +1,22 @@
-
-
 body {
     margin: 0;
     background-color: #191d2e ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#link:hover{
+
+  /* -- link CSS --*/
+#link {
     cursor: pointer;
-    color: #558BC4;
+    padding-left: 25px;
+    background-image: url(./icons/search.ico);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    color: black;
 }
-#link:before {
-    content: "🔗"
+#link:hover {
+    transition: 0.5s;
+    color: white;
 }
 #animationText{
     animation-name: text;
@@ -21,10 +27,39 @@ body {
 #invert {
     filter: invert(100%);
 }
+  /* -- codigo/preview  --*/
+#Code {
+    cursor: pointer;
+    padding-left: 25px;
+    background-image: url(./icons/codigo.ico);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    color: black;
+}
+#Code:hover {
+    transition: 0.5s;
+    color: white;
+}
+#preview {
+    cursor: pointer;
+    padding-left: 25px;
+    background-image: url(./icons/preview.ico);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    color: black;
+}
+#preview:hover {
+    transition: 0.5s;
+    color: white;
+}
 @keyframes text {
     from  {color: white;  transition: 0s;}
     to   {color: transparent;  transition: 0s;}
   }
+
+  /* -- alerta  --*/
 .alert{
     display: none;
     width: 400px;
@@ -58,22 +93,29 @@ body {
 #no-confirm {
     background-color: #f12a23;
 }
+
+  /* -- botao de voltar --*/
 .btnBack{
     position: fixed;
     bottom: 50px;
     right: 15px;
     width: 100px;
     height: 100px;
-    background-color: #558BC4;
+    background-color: transparent;
+    background-image: url(./icons/home.ico);
+    background-repeat: no-repeat;
+    background-size: 100px;
     color: white;
-    border-radius: 15px;
+    border: none;
     font-size: 30px;
     opacity: 0.2;
     cursor: pointer;
+    filter: invert(100%);
 }
 .btnBack:hover {
     transition: 0.5s;
     opacity: 1;
+    filter: invert(0%);
 }
 .btnBack:focus {
     transition: 0.5s;
@@ -242,6 +284,7 @@ body {
 #mysql {
     background-color: #3174AB;
 }
+
 /* -- Redes Sociais --*/
 .redes {
     display: flex;

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href='../icons/favicon.ico'>
-    <title>Rafael Paroni</title>
+    <script src="../script.js"></script>
+    <title>Terminal</title>
 </head>
 <body>
     <div class="Baner" id="inicio"> <!-- Banner / Inicio -->
@@ -18,70 +19,26 @@
             <img src="../icons/terminal.ico" id="invert">
             <span>
                 Um Site feito para se comunicar com o Banco de dados Mysql, Podendo Deletar, Criar, Editar e Buscar dados e sendo possivel fazer login com senha e email<a id="animationText">_</a>
+                | <a id="Code" onclick="red('terminal')"> Codigo</a> 
             </span></div>
     </div>
     <div class="topic" id="redes"> <!-- social -->
         <div class="topicTitle"><span><a id="TextDiretion">></a> linguagens<a id="animationText">_</a></span></div>
         <div class="ling">
-            <button onclick="red('python')"> <img src="../icons/html.ico"> Html</button>
-            <button onclick="red('python')"> <img src="../icons/css.ico"> Css</button>
-            <button onclick="red('python')"> <img src="../icons/js.ico"> javascript</button>
-            <button onclick="red('python')"> <img src="../icons/php.ico"> Php</button>
-            <button onclick="red('python')"> <img src="../icons/mySql.ico"> MySql</button>
+            <button onclick="red('html')"> <img src="../icons/html.ico"> Html</button>
+            <button onclick="red('css')"> <img src="../icons/css.ico"> Css</button>
+            <button onclick="red('js')"> <img src="../icons/js.ico"> javascript</button>
+            <button onclick="red('php')"> <img src="../icons/php.ico"> Php</button>
+            <button onclick="red('mysql')"> <img src="../icons/mySql.ico"> MySql</button>
         </div>
     </div>
-    <button class="btnBack" onclick="comeback()">Voltar</button>
+    <button class="btnBack" onclick="goBack()"></button>
 
     <div class="alert" id="alert">
         <h1>atenção!</h1>
         <p>Você está sendo redirecionado para outro site!</p>
         <button id="confirm" value="" onclick="confirm()">Continuar!</button>
-        <button id="no-confirm" onclick="noConfirm()" >Voltar</button>
+        <button id="no-confirm" onclick="notConfirm()" >Voltar</button>
     </div>
 </body>
-<script>
-    function comeback(){
-        window.location = '../index.html'
-    }
-    function alerta(value){
-        document.getElementById('alert').style.display = "block"  
-    }
-    function noConfirm(value){
-        document.getElementById('alert').style.display = "none" 
-    }
-    function confirm(value){
-        window.location = document.getElementById('confirm').getAttribute('value')
-        noConfirm()
-    }
-    function red(value){
-        if(value == 'html'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://g.co/kgs/cNYSe2")
-        }else if(value == 'css'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://g.co/kgs/yKs1if")
-        }
-        else if(value == 'script'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://g.co/kgs/nJhcNE")
-        }
-        else if(value == 'php'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://g.co/kgs/co6VH6")
-        }
-        else if(value == 'mysql'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://g.co/kgs/hHdGjq")
-        }else if(value == 'python'){
-            alerta()
-            var elementValue = document.getElementById('confirm')
-            elementValue.setAttribute("value", "https://g.co/kgs/jf1Gnk")
-        }
-    }
-</script>
 </html>
