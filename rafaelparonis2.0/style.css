@@ -41,9 +41,39 @@ body {
     transition: 0.5s;
     color: white;
 }
+#active {
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: right;
+    animation-name: OnlineAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes OnlineAnimation {
+    from {background-image: none;}
+     to {background-image: url(./icons/active.ico);}
+ }
+#preview-active {
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: right;
+    animation-name: previewAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes previewAnimation {
+   from {background-image: none;}
+    to {background-image: url(./icons/previewActive.ico);}
+}
+#no-active{
+    background-image: url(./icons/offline.ico);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: right;
+}
 #preview {
     cursor: pointer;
-    padding-left: 25px;
+    padding-left: 30px;
     background-image: url(./icons/preview.ico);
     background-size: 25px;
     background-repeat: no-repeat;

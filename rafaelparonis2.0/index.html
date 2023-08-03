@@ -34,21 +34,21 @@
     <div class="topic" id="projetos"> <!-- Projetos -->
         <div class="topicTitle"><span><a id="TextDiretion">></a> Projetos<a id="animationText">_</a></span></div>
             <div class="projetos">
-                <div class="pj " onclick="project('website-pessoal')"> <!-- Website pessoal -->
+                <div class="pj " onclick="project('website-pessoal')" id="active"> <!-- Website pessoal -->
                     <div class="pjTop">
                         <img src="./icons/website.ico">
                         <span>Website pessoal</span>
                     </div>
                     <div class="pjContent">
                         <span> 
-                            Website feito com finalidade de agrupar os meus projetos, minhas redes sociais e com intuito de aprender mais sobre Html, Css e javascript
+                           Site ativo | Website feito com finalidade de agrupar os meus projetos, minhas redes sociais e com intuito de aprender mais sobre Html, Css e javascript
                         </span>
                     </div>
                     <div class="pjTags">
                         <button id="html">HTML</button><button id="css">CSS</button><button id="script">JAVASCRIPT</button>
                     </div>
                 </div>
-                <div class="pj " onclick="project('snake-game')"> <!-- Snake game -->
+                <div class="pj " onclick="project('snake-game')" id="no-active"> <!-- Snake game -->
                     <div class="pjTop">
                         <img src="./icons/jogo.ico">
                         <span>Snake game</span>
@@ -62,7 +62,7 @@
                         <button id="python">Python</button>
                     </div>
                 </div>
-                <div class="pj " onclick="project('terminal')"> <!-- Terminal -->
+                <div class="pj " onclick="project('terminal')" id="no-active"> <!-- Terminal -->
                     <div class="pjTop">
                         <img src="./icons/terminal.ico">
                         <span>Terminal</span>
@@ -76,7 +76,7 @@
                         <button id="html">html</button><button id="css">css</button><button id="script">javascript</button><button id="mysql">MySql</button><button id="php">php</button>
                     </div>
                 </div>
-                <div class="pj " onclick="project('website-old')"> <!-- Website Old -->
+                <div class="pj " onclick="project('website-old')" id="no-active"> <!-- Website Old -->
                     <div class="pjTop">
                         <img src="./icons/website.ico">
                         <span>Antigo Website </span>
@@ -91,21 +91,21 @@
                         <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
                     </div>
                 </div>
-                <div class="pj " onclick="project('alert-html')"> <!-- alert -->
+                <div class="pj " onclick="project('alert-html')"  id="preview-active"> <!-- alert -->
                     <div class="pjTop">
                         <img src="./icons/code.ico">
                         <span>Alert html </span>
                     </div>
                     <div class="pjContent">
                         <span> 
-                           Codigo em html, javascript e css para criar um alerta personalizado
+                          Preview ativo | Codigo em html, javascript e css para criar um alerta personalizado
                         </span>
                     </div>
                     <div class="pjTags">
                         <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
                     </div>
                 </div>
-                <div class="pj " onclick="project('login-screen')"> <!-- Login screen -->
+                <div class="pj " onclick="project('login-screen')" id="no-active"> <!-- Login screen -->
                     <div class="pjTop">
                         <img src="./icons/website.ico">
                         <span>Tela de Login</span>
@@ -119,8 +119,20 @@
                         <button id="html">html</button><button id="css">css</button>
                     </div>
                 </div>
-
-
+                <div class="pj " onclick="project('website-emoji')" id="active"> <!-- Login screen -->
+                    <div class="pjTop">
+                        <img src="./icons/website.ico">
+                        <span>Website Emoji</span>
+                    </div>
+                    <div class="pjContent">
+                        <span> 
+                            Site ativo | site feito com a intenção de facilitar para quem quer "copiar" os emojis para a área de transferência, podendo assim utilizá-los em outros projetos
+                        </span>
+                    </div>
+                    <div class="pjTags">
+                        <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
+                    </div>
+                </div>
             </div>
     </div>
     <div class="topic" id="redes"> <!-- social -->

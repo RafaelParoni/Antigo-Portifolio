@@ -85,15 +85,30 @@
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://github.com/RafaelParoni/Website-pessoal")
+        }else if(value == 'rafaelparoni.netlify.app'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://rafaelparoni.netlify.app/")
         }else if(value == 'alert-preview'){
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://alertcode.glitch.me/")
-        }
-        else if(value == 'login-screen'){
+        }else if(value == 'alertcode.glitch.me'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://alertcode.glitch.me/")
+        }else if(value == 'login-screen'){
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://github.com/RafaelParoni/login_screen")
+        }else if(value == 'website-emoji'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://github.com/RafaelParoni/Splus_emojis")
+        }else if(value == 'splusemoji.netlify.app'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://splusemoji.netlify.app/")
         }
     }
     function project(value){
