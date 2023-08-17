@@ -20,7 +20,7 @@
     }
     function confirm(value){
         window.location = document.getElementById('confirm').getAttribute('value')
-        noConfirm()
+        notConfirm()
     }
     function red(value){
         if(value == 'instagram'){
@@ -109,6 +109,15 @@
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://splusemoji.netlify.app/")
+        }else if(value == 'tasks-website'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://github.com/RafaelParoni/tasks-site")
+        }
+        else if(value == 'tasks-website-preview'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://task-preview.netlify.app/")
         }
     }
     function project(value){

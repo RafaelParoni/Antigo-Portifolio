@@ -9,12 +9,6 @@
     <title>Rafael Paroni</title>
 </head>
 <body>
-    <div class="NavBar"> <!-- NavBar / Buttons top -->
-        <button class="btnNavbar" onclick="href('inico')"> Inicio </button>
-        <button class="btnNavbar" onclick="href('sobre')"> Sobre </button>
-        <button class="btnNavbar" onclick="href('projetos')"> Projetos </button>
-        <button class="btnNavbar" onclick="href('redes')"> Redes sociais </button>
-    </div>
     <div class="Baner" id="inicio"> <!-- Banner / Inicio -->
     <img  class="imgBnaer" src="pexels.jpg">
     <h1 class="TextCenter"> <a id="TextDiretion">></a> Rafael Paroni Silva<a id="animationText">|</a> </h1> 
@@ -133,6 +127,20 @@
                         <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
                     </div>
                 </div>
+                <div class="pj " onclick="project('tasks-website')" id="preview-active"> <!-- Login screen -->
+                    <div class="pjTop">
+                        <img src="./icons/website.ico">
+                        <span>Task site</span>
+                    </div>
+                    <div class="pjContent">
+                        <span> 
+                            Preview ativo | Site feito para criar uma lista de tarefas, onde pode editar, apagar e criar. Preview sem banco de dados!
+                        </span>
+                    </div>
+                    <div class="pjTags">
+                        <button id="html">html</button><button id="css">css</button><button id="script">javascript</button>
+                    </div>
+                </div>
             </div>
     </div>
     <div class="topic" id="redes"> <!-- social -->
@@ -150,11 +158,11 @@
         <h1>atenção!</h1>
         <p>Você está sendo redirecionado para outro site!</p>
         <button id="confirm" value="" onclick="confirm()">Continuar!</button>
-        <button id="no-confirm" onclick="noConfirm()" >Voltar</button>
+        <button id="no-confirm" onclick="notConfirm()" >Voltar</button>
     </div>
     <div class="alert" id="alertdiscord">
         <p>Nome de usuário: rafael74 </p>
-        <button id="no-confirm" onclick="noConfirm('discord')" >Voltar</button>
+        <button id="no-confirm" onclick="notConfirm('discord')" >Voltar</button>
     </div>
 </body>
 
