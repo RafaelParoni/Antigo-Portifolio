@@ -49,6 +49,10 @@
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://g.co/kgs/yKs1if")
+        }else if(value == 'react.js'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://g.co/kgs/4R2XeQ")
         }else if(value == 'js'){
             alerta()
             var elementValue = document.getElementById('confirm')
@@ -113,11 +117,26 @@
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://github.com/RafaelParoni/tasks-site")
-        }
-        else if(value == 'tasks-website-preview'){
+        }else if(value == 'tasks-website-preview'){
             alerta()
             var elementValue = document.getElementById('confirm')
             elementValue.setAttribute("value", "https://task-preview.netlify.app/")
+        }else if(value == 'search-cep'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://github.com/RafaelParoni/buscador-cep")
+        }else if(value == 'search-cep.app'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://buscador-cep-orpin.vercel.app/")
+        }else if(value == 'search-Movie'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://github.com/RafaelParoni/Movie-Search")
+        }else if(value == 'search-Movie.app'){
+            alerta()
+            var elementValue = document.getElementById('confirm')
+            elementValue.setAttribute("value", "https://movie-search-five-chi.vercel.app/")
         }
     }
     function project(value){

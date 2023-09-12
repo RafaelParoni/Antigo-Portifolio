@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link rel="icon" type="image/x-icon" href='../icons/favicon.ico'>
+    <title>Buscador de Filme</title>
+</head>
+<body>
+    <div class="Baner" id="inicio"> <!-- Banner / Inicio -->
+        <img  class="imgBnaer" src="../pexels.jpg">
+        <h1 class="TextCenter"> <a id="TextDiretion">></a> Buscador de Filme<a id="animationText">|</a> </h1> 
+    </div>
+    <div class="topic" id="sobre"> <!-- Sobre -->
+        <div class="topicTitle"><span><a id="TextDiretion">></a> Sobre<a id="animationText">_</a></span></div>
+        <div class="sobre">
+            <img src="../icons/website.ico" id="invert">
+            <span>
+                Site feito com OMDb API para buscar filmes conforme sua pesquisa, mostrando informações sobre o filme <a id="animationText">_</a>
+                | <a id="Code" onclick="red('search-Movie')"> Codigo</a> Site: <a id="online" onclick="red('search-Movie.app')"> movie-search-five-chi.vercel.app </a>
+            </span>
+        
+        </div>
+    </div>
+    <div class="topic" id="redes"> <!-- social -->
+        <div class="topicTitle"><span><a id="TextDiretion">></a> linguagens<a id="animationText">_</a></span></div>
+        <div class="ling">
+            <button onclick="red('react.js')"><img src="../icons/React-icon.svg.png"> React.js</button>
+            <button onclick="red('html')"> <img src="../icons/html.ico"> Html</button>
+            <button onclick="red('css')"><img src="../icons/css.ico"> Css</button>
+            <button onclick="red('js')"><img src="../icons/js.ico"> Javascript</button>
+        </div>
+    </div>
+    <button class="btnBack"  onclick="goBack()"></button> <!-- Botao de voltar ao index.html-->
+    <div class="alert" id="alert">
+        <h1>atenção!</h1>
+        <p>Você está sendo redirecionado para outro site!</p>
+        <button id="confirm" value="" onclick="confirm()">Continuar!</button>
+        <button id="no-confirm" onclick="notConfirm()" >Voltar</button>
+    </div>
+</body>
+</html>
